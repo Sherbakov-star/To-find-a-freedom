@@ -1,0 +1,30 @@
+﻿<Window x:Class="To_Find_a_Freedom.zad1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Find_a_Freedom"
+        mc:Ignorable="d"
+        Title="Задание 1" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:3" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="Black">
+        <TextBlock FontSize="30" Foreground="#51c655" Margin="44,0,67.6,207"><Run Text="Что выведет на консоль следующий код:"/><LineBreak/><LineBreak/><Run Text="string person = &quot;Tom&quot;;"/><LineBreak/><Run Text="person = &quot;Sam&quot;;"/><LineBreak/><Run Text="Console.WriteLine(person);"/></TextBlock>
+        <TextBlock FontSize="30" Foreground="#51c655" HorizontalAlignment="Left" Margin="24,324,0,0" TextWrapping="Wrap" Text="Ответ:" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="otvet" Background="Black" FontSize="30" Foreground="#51c655" HorizontalAlignment="Left" Height="40" Margin="125,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <Button Background="#51c655" Foreground="Black" FontSize="16" FontWeight="Bold" Content="Отправить" HorizontalAlignment="Left" Margin="388,324,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

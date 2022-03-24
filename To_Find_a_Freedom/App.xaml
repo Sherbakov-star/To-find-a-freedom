@@ -1,0 +1,9 @@
+﻿<Application x:Class="To_Find_a_Freedom.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:To_Find_a_Freedom"
+             StartupUri="menu.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

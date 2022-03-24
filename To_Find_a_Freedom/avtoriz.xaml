@@ -1,0 +1,39 @@
+﻿<Window x:Class="To_Find_a_Freedom.avtoriz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Find_a_Freedom"
+        mc:Ignorable="d"
+        Title="Вход" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\shher\OneDrive\Рабочий стол\Фотошоп\komp.png"/>
+    </Window.Background>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:3" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid Background="Green" HorizontalAlignment="Left" Height="65" Margin="192,10,0,0" VerticalAlignment="Top" Width="399">
+            <Image Source="C:\Users\shher\OneDrive\Рабочий стол\Фотошоп\wts.jpg" Margin="-159,0,159,0"/>
+            <TextBlock FontWeight="Bold"  Foreground="White" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="ЧёКак"  Height="45" Width="170" Margin="74,10,151,10"/>
+        </Grid>
+        <TextBox FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Height="29" Margin="201,121,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top" Width="76"/>
+        <TextBox FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Height="29" Margin="201,174,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="29" Margin="310,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Height="29" Margin="310,174,0,0"  VerticalAlignment="Top" Width="141"/>
+        <Button Content="Войти" Background="Green" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Margin="321,239,0,0" VerticalAlignment="Top" Width="116" Height="22" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>

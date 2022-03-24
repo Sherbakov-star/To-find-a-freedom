@@ -1,0 +1,25 @@
+﻿<Window x:Class="To_Find_a_Freedom.listzadaniy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Find_a_Freedom"
+        mc:Ignorable="d"
+        Title="Задания" Height="450" Width="810" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:3" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="Black">
+        <TextBlock FontSize="30" Foreground="#51c655" Margin="0,0,-0.4,239"><Run Text="Тебе нужно заработать немного денег чтобы купить "/><LineBreak/><Run Text="информацию,которая поможет тебе в поиске брата."/><LineBreak/><Run/><LineBreak/><Run Text="Я взял пару задач на фрилансе,выполни"/><Run Text=" их"/><Run Text=" и деньги твои"/></TextBlock>
+        <TextBlock x:Name="zadanie1" FontSize="30" Foreground="#51c655" Margin="294,200,294.6,176" PreviewMouseDown="zadanie1_PreviewMouseDown"><Run Text="--"/><Run Text="Задание 1"/><Run Text="--"/></TextBlock>
+        <TextBlock x:Name="zadanie2" FontSize="30" Foreground="#51c655" Margin="294,265,294.6,111" PreviewMouseDown="zadanie2_PreviewMouseDown"><Run Text="--"/><Run Text="Задание "/><Run Text="2"/><Run Text="--"/></TextBlock>
+        <TextBlock x:Name="zadanie1_Copy" FontSize="30" Foreground="#51c655" Margin="10,366,682.2,10" Text="Баланс:"/>
+        <TextBlock x:Name="balance" FontSize="30" Foreground="#51c655" Margin="121,366,571.2,10" Text="0"/>
+    </Grid>
+</Window>

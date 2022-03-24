@@ -1,0 +1,39 @@
+﻿<Window x:Class="To_Find_a_Freedom.rinok"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Find_a_Freedom"
+        mc:Ignorable="d"
+        Title="Черный рынок" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:3" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="Black">
+        <TextBlock x:Name="logandpass" FontSize="30" Foreground="#51c655" Margin="10,118,382.6,241"><Run Text="Логин и пароль от "/><Run Text="&quot;"/><Run Text="ЧёКак"/><Run Text="&quot;"/></TextBlock>
+        <Button x:Name="kup1" Background="#51c655" Foreground="Black" FontSize="16" FontWeight="Bold" Content="Купить" HorizontalAlignment="Left" Margin="632,118,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock x:Name="desh" FontSize="30" Foreground="#51c655" Margin="10,203,382.6,156" Text="Дешифратор"/>
+        <Button x:Name="kup2" Background="#51c655" Foreground="Black" FontSize="16" FontWeight="Bold" Content="Купить" HorizontalAlignment="Left" Margin="632,209,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock FontSize="30" Foreground="#51c655" Margin="436,52,184.6,307" Text="Стоимость:"/>
+        <TextBlock x:Name="two" FontSize="30" Foreground="#51c655" Margin="442,112,178.6,247" Text="2000р"/>
+        <TextBlock x:Name="k5" FontSize="30" Foreground="#51c655" Margin="442,203,178.6,156"><Run Text="5"/><Run Text="000р"/></TextBlock>
+    </Grid>
+</Window>

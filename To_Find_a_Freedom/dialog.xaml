@@ -1,0 +1,21 @@
+﻿<Window x:Class="To_Find_a_Freedom.dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Find_a_Freedom"
+        mc:Ignorable="d"
+        Title="Важное сообщение" Height="274.809" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:3" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="Black">
+        <TextBlock Foreground="#51c655" FontSize="30"><Run Text="Прив"/><Run Text="етствую."/><LineBreak/><Run Text="Твой брат пропал."/><LineBreak/><Run Text="Тебе необходимо разыскать его по горячим следам."/><LineBreak/><Run Text="Используй свои навыки программирования"/><LineBreak/><Run Text="и разузнай, кто стоит за его пропажей."/></TextBlock>
+    </Grid>
+</Window>
